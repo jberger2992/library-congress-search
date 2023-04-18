@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library of Congress Search</title>
-    <link rel="stylesheet" src="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -14,14 +14,19 @@
             <main class="col-6">
             <h1>Library of Congress Search Engine</h1>
                 <form>
-                    <input type="text" id="search-field" name="search">
-                    <select id="parameters" name="parameters">
-                        <!-- <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option> -->
+                    <input type="text" id="search-field" name="search" class="w-100"><br>
+                    <select id="format" name="format" class="w-50">
+                        <option value="format-options">Format options...</option>
+                        <option value="maps">Maps</option>
+                        <option value="audio">Audio</option>
+                        <option value="photes">Photes</option>
+                        <option value="manuscripts">Manuscripts</option>
+                        <option value="newspapers">Newspapers</option>
+                        <option value="film-and-videos">Film and Videos</option>
+                        <option value="noteated-music">Notated Music</option>
+                        <option value="websites">Websites</option>
                     </select>
-                    <button>Submit</button>
+                    <button id="submit-btn" class="w-25">Submit</button>
                 </form>
             </main>
         </div>
